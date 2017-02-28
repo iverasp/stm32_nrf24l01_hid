@@ -1,16 +1,3 @@
-/*
- * This example was created to showcase the work with usb hid in data mode "Interrupt Transfers",
- * using the library libopencm3. And when it is necessary not only to give the host data,
- * but to take away the packets and respond to them.
- * In this case, the request from the host to our final point, we modify the part of the received packet as
- * well as writes the value obtained from the ADC via the built-in temperature sensor.
- * The modified packet is sent back to the host.
- * When you create this example, use the following example:
- * https://github.com/libopencm3/libopencm3-examples/tree/master/examples/stm32/f1/lisa-m-2/adc_injec_timtrig_irq
- * https://github.com/libopencm3/libopencm3-examples/blob/master/examples/stm32/f1/lisa-m-1/usb_hid/usbhid.c
- * Author Andrei Zaitsev November 6, 2015.
- */
-
 #include <stdlib.h>
 #include <string.h>
 #include <libopencm3/stm32/rcc.h>
